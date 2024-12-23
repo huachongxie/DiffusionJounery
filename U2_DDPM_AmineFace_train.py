@@ -106,7 +106,7 @@ for epoch in range(76,epochs):
 
         loop.set_postfix(loss=loss.item())
 
-    if eopch % 5 == 0:
+    if epoch % 5 == 0:
         torch.save(model.state_dict(), f"U2_DDPM_AminePTH/DDPM_Amine_epoch_{epoch}.pth")
 
 # 完成训练
